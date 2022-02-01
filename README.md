@@ -7,7 +7,7 @@ It provides two tools to this end: a `@EffectID` property wrapper, and a `namesp
 ### The `@EffectID` property wrapper.
 When using TCA with long-lived effects, we need to provide some hashable value to identify them accross runs of the same reducer. If we start a `timer` effect, we need to provide an identifier for the effect in order to retrieve the effect and cancel it when we don't need it anymore.
 
-Any `Hashable` value can be used as effect identifier. The authors of the library are recommending to exploit Swift type system by defining ad hoc local and property-less `Hashable` structs. Any instance of this struct is equal to itself, and collisions risks are limited, as these types are defined locally.
+Any `Hashable` value can be used as effect identifier. The authors of TCA are recommending to exploit Swift type system by defining ad hoc local and property-less `Hashable` structs. Any instance of this struct is equal to itself, and collisions risks are limited, as these types are defined locally.
 
 For example, inside some `Reducer`'s block, one can define:
 ```swift
