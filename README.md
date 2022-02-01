@@ -1,5 +1,8 @@
 # Composable Effect Identifier
 
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Ftgrapperon%2Fcomposable-effect-identifier%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/tgrapperon/composable-effect-identifier)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Ftgrapperon%2Fcomposable-effect-identifier%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/tgrapperon/composable-effect-identifier)
+
 This `ComposableEffectIdentifier` is a small accessory library to [The Composable Architecture](https://github.com/pointfreeco/swift-composable-architecture) (TCA). It allows to improve user experience when defining `Effect` identifiers.
 
 It provides two tools to this end: a `@EffectID` property wrapper, and a `namespace()` higher order reducer that allows several similar stores instances to run in the same process without having to micro-manage ongoing `Effect` identifiers.
