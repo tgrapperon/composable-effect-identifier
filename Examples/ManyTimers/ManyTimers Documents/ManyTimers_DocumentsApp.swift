@@ -57,7 +57,6 @@ struct ManyTimers_DocumentApp: App {
 
 extension FileDocumentConfiguration where Document == ManyTimersDocument {
   var documentID: AnyHashable {
-    if let url = fileURL { return url }
-    return document.identifiedTimer.id
+    document.identifiedTimer.id
   }
 }
