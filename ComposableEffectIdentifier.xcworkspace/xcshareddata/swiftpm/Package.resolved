@@ -1,0 +1,70 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "combine-schedulers",
+        "repositoryURL": "https://github.com/pointfreeco/combine-schedulers",
+        "state": {
+          "branch": null,
+          "revision": "4cf088c29a20f52be0f2ca54992b492c54e0076b",
+          "version": "0.5.3"
+        }
+      },
+      {
+        "package": "swift-case-paths",
+        "repositoryURL": "https://github.com/pointfreeco/swift-case-paths",
+        "state": {
+          "branch": null,
+          "revision": "241301b67d8551c26d8f09bd2c0e52cc49f18007",
+          "version": "0.8.0"
+        }
+      },
+      {
+        "package": "swift-collections",
+        "repositoryURL": "https://github.com/apple/swift-collections",
+        "state": {
+          "branch": null,
+          "revision": "48254824bb4248676bf7ce56014ff57b142b77eb",
+          "version": "1.0.2"
+        }
+      },
+      {
+        "package": "swift-composable-architecture",
+        "repositoryURL": "https://github.com/pointfreeco/swift-composable-architecture",
+        "state": {
+          "branch": null,
+          "revision": "ba9c626ab1b2b6af8cf684eebb2ab472fa5b6753",
+          "version": "0.33.1"
+        }
+      },
+      {
+        "package": "swift-custom-dump",
+        "repositoryURL": "https://github.com/pointfreeco/swift-custom-dump",
+        "state": {
+          "branch": null,
+          "revision": "51698ece74ecf31959d3fa81733f0a5363ef1b4e",
+          "version": "0.3.0"
+        }
+      },
+      {
+        "package": "swift-identified-collections",
+        "repositoryURL": "https://github.com/pointfreeco/swift-identified-collections",
+        "state": {
+          "branch": null,
+          "revision": "680bf440178a78a627b1c2c64c0855f6523ad5b9",
+          "version": "0.3.2"
+        }
+      },
+      {
+        "package": "xctest-dynamic-overlay",
+        "repositoryURL": "https://github.com/pointfreeco/xctest-dynamic-overlay",
+        "state": {
+          "branch": null,
+          "revision": "50a70a9d3583fe228ce672e8923010c8df2deddd",
+          "version": "0.2.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

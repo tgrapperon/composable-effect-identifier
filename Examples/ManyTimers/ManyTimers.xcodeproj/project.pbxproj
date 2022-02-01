@@ -1,0 +1,776 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E91AF42E27A8E1FC00E4A4C4 /* ManyTimersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C3DF0927A8920400ADE1D0 /* ManyTimersApp.swift */; };
+		E91AF42F27A8E20200E4A4C4 /* TimersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C3DF0B27A8920400ADE1D0 /* TimersView.swift */; };
+		E91AF43027A8E24500E4A4C4 /* ManyTimers_DocumentsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C3DF1C27A8929600ADE1D0 /* ManyTimers_DocumentsApp.swift */; };
+		E91AF43127A8E24500E4A4C4 /* ManyTimersDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C3DF1E27A8929600ADE1D0 /* ManyTimersDocument.swift */; };
+		E91AF43327A8E24D00E4A4C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C3DF0D27A8920500ADE1D0 /* Assets.xcassets */; };
+		E91AF43527A8E75900E4A4C4 /* DocumentFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91AF43427A8E75900E4A4C4 /* DocumentFeature.swift */; };
+		E91AF43627A8E75900E4A4C4 /* DocumentFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91AF43427A8E75900E4A4C4 /* DocumentFeature.swift */; };
+		E9947BC027A8B33B00A8FF43 /* LonelyTimer in Frameworks */ = {isa = PBXBuildFile; productRef = E9947BBF27A8B33B00A8FF43 /* LonelyTimer */; };
+		E9947BC227A8B34300A8FF43 /* LonelyTimer in Frameworks */ = {isa = PBXBuildFile; productRef = E9947BC127A8B34300A8FF43 /* LonelyTimer */; };
+		E9947BC427A8B34A00A8FF43 /* LonelyTimer in Frameworks */ = {isa = PBXBuildFile; productRef = E9947BC327A8B34A00A8FF43 /* LonelyTimer */; };
+		E9947BC627A8B35200A8FF43 /* LonelyTimer in Frameworks */ = {isa = PBXBuildFile; productRef = E9947BC527A8B35200A8FF43 /* LonelyTimer */; };
+		E9C3DF0A27A8920400ADE1D0 /* ManyTimersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C3DF0927A8920400ADE1D0 /* ManyTimersApp.swift */; };
+		E9C3DF0C27A8920400ADE1D0 /* TimersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C3DF0B27A8920400ADE1D0 /* TimersView.swift */; };
+		E9C3DF0E27A8920500ADE1D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C3DF0D27A8920500ADE1D0 /* Assets.xcassets */; };
+		E9C3DF1127A8920500ADE1D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C3DF1027A8920500ADE1D0 /* Preview Assets.xcassets */; };
+		E9C3DF1D27A8929600ADE1D0 /* ManyTimers_DocumentsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C3DF1C27A8929600ADE1D0 /* ManyTimers_DocumentsApp.swift */; };
+		E9C3DF1F27A8929600ADE1D0 /* ManyTimersDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C3DF1E27A8929600ADE1D0 /* ManyTimersDocument.swift */; };
+		E9C3DF2327A8929800ADE1D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C3DF2227A8929800ADE1D0 /* Assets.xcassets */; };
+		E9C3DF2627A8929800ADE1D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C3DF2527A8929800ADE1D0 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E91AF43427A8E75900E4A4C4 /* DocumentFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentFeature.swift; sourceTree = "<group>"; };
+		E9C3DEF227A891D300ADE1D0 /* ManyTimers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ManyTimers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9C3DF0727A8920400ADE1D0 /* ManyTimers (macOS).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ManyTimers (macOS).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9C3DF0927A8920400ADE1D0 /* ManyTimersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManyTimersApp.swift; sourceTree = "<group>"; };
+		E9C3DF0B27A8920400ADE1D0 /* TimersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimersView.swift; sourceTree = "<group>"; };
+		E9C3DF0D27A8920500ADE1D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E9C3DF1027A8920500ADE1D0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E9C3DF1227A8920500ADE1D0 /* ManyTimers.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ManyTimers.entitlements; sourceTree = "<group>"; };
+		E9C3DF1A27A8929600ADE1D0 /* ManyTimers Documents (macOS).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ManyTimers Documents (macOS).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9C3DF1C27A8929600ADE1D0 /* ManyTimers_DocumentsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManyTimers_DocumentsApp.swift; sourceTree = "<group>"; };
+		E9C3DF1E27A8929600ADE1D0 /* ManyTimersDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManyTimersDocument.swift; sourceTree = "<group>"; };
+		E9C3DF2227A8929800ADE1D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E9C3DF2527A8929800ADE1D0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E9C3DF2727A8929800ADE1D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9C3DF2827A8929800ADE1D0 /* ManyTimers_Documents.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ManyTimers_Documents.entitlements; sourceTree = "<group>"; };
+		E9C3DF3027A892BF00ADE1D0 /* ManyTimers Documents (iOS).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ManyTimers Documents (iOS).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9C3DEEF27A891D300ADE1D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9947BC027A8B33B00A8FF43 /* LonelyTimer in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9C3DF0427A8920400ADE1D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9947BC227A8B34300A8FF43 /* LonelyTimer in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9C3DF1727A8929600ADE1D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9947BC627A8B35200A8FF43 /* LonelyTimer in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9C3DF2D27A892BF00ADE1D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9947BC427A8B34A00A8FF43 /* LonelyTimer in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E9947BBE27A8B33B00A8FF43 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9C3DEE927A891D300ADE1D0 = {
+			isa = PBXGroup;
+			children = (
+				E9C3DF0827A8920400ADE1D0 /* ManyTimers */,
+				E9C3DF1B27A8929600ADE1D0 /* ManyTimers Documents */,
+				E9C3DEF327A891D300ADE1D0 /* Products */,
+				E9947BBE27A8B33B00A8FF43 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E9C3DEF327A891D300ADE1D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9C3DEF227A891D300ADE1D0 /* ManyTimers.app */,
+				E9C3DF0727A8920400ADE1D0 /* ManyTimers (macOS).app */,
+				E9C3DF1A27A8929600ADE1D0 /* ManyTimers Documents (macOS).app */,
+				E9C3DF3027A892BF00ADE1D0 /* ManyTimers Documents (iOS).app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9C3DF0827A8920400ADE1D0 /* ManyTimers */ = {
+			isa = PBXGroup;
+			children = (
+				E9C3DF0927A8920400ADE1D0 /* ManyTimersApp.swift */,
+				E9C3DF0B27A8920400ADE1D0 /* TimersView.swift */,
+				E9C3DF0D27A8920500ADE1D0 /* Assets.xcassets */,
+				E9C3DF1227A8920500ADE1D0 /* ManyTimers.entitlements */,
+				E9C3DF0F27A8920500ADE1D0 /* Preview Content */,
+			);
+			path = ManyTimers;
+			sourceTree = "<group>";
+		};
+		E9C3DF0F27A8920500ADE1D0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E9C3DF1027A8920500ADE1D0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E9C3DF1B27A8929600ADE1D0 /* ManyTimers Documents */ = {
+			isa = PBXGroup;
+			children = (
+				E91AF43427A8E75900E4A4C4 /* DocumentFeature.swift */,
+				E9C3DF1C27A8929600ADE1D0 /* ManyTimers_DocumentsApp.swift */,
+				E9C3DF1E27A8929600ADE1D0 /* ManyTimersDocument.swift */,
+				E9C3DF2227A8929800ADE1D0 /* Assets.xcassets */,
+				E9C3DF2727A8929800ADE1D0 /* Info.plist */,
+				E9C3DF2827A8929800ADE1D0 /* ManyTimers_Documents.entitlements */,
+				E9C3DF2427A8929800ADE1D0 /* Preview Content */,
+			);
+			path = "ManyTimers Documents";
+			sourceTree = "<group>";
+		};
+		E9C3DF2427A8929800ADE1D0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E9C3DF2527A8929800ADE1D0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E9C3DEF127A891D300ADE1D0 /* ManyTimers (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9C3DF0027A891D400ADE1D0 /* Build configuration list for PBXNativeTarget "ManyTimers (iOS)" */;
+			buildPhases = (
+				E9C3DEEE27A891D300ADE1D0 /* Sources */,
+				E9C3DEEF27A891D300ADE1D0 /* Frameworks */,
+				E9C3DEF027A891D300ADE1D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ManyTimers (iOS)";
+			packageProductDependencies = (
+				E9947BBF27A8B33B00A8FF43 /* LonelyTimer */,
+			);
+			productName = ManyTimers;
+			productReference = E9C3DEF227A891D300ADE1D0 /* ManyTimers.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E9C3DF0627A8920400ADE1D0 /* ManyTimers (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9C3DF1327A8920500ADE1D0 /* Build configuration list for PBXNativeTarget "ManyTimers (macOS)" */;
+			buildPhases = (
+				E9C3DF0327A8920400ADE1D0 /* Sources */,
+				E9C3DF0427A8920400ADE1D0 /* Frameworks */,
+				E9C3DF0527A8920400ADE1D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ManyTimers (macOS)";
+			packageProductDependencies = (
+				E9947BC127A8B34300A8FF43 /* LonelyTimer */,
+			);
+			productName = ManyTimers;
+			productReference = E9C3DF0727A8920400ADE1D0 /* ManyTimers (macOS).app */;
+			productType = "com.apple.product-type.application";
+		};
+		E9C3DF1927A8929600ADE1D0 /* ManyTimers Documents (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9C3DF2B27A8929800ADE1D0 /* Build configuration list for PBXNativeTarget "ManyTimers Documents (macOS)" */;
+			buildPhases = (
+				E9C3DF1627A8929600ADE1D0 /* Sources */,
+				E9C3DF1727A8929600ADE1D0 /* Frameworks */,
+				E9C3DF1827A8929600ADE1D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ManyTimers Documents (macOS)";
+			packageProductDependencies = (
+				E9947BC527A8B35200A8FF43 /* LonelyTimer */,
+			);
+			productName = "ManyTimers Documents";
+			productReference = E9C3DF1A27A8929600ADE1D0 /* ManyTimers Documents (macOS).app */;
+			productType = "com.apple.product-type.application";
+		};
+		E9C3DF2F27A892BF00ADE1D0 /* ManyTimers Documents (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9C3DF3E27A892C100ADE1D0 /* Build configuration list for PBXNativeTarget "ManyTimers Documents (iOS)" */;
+			buildPhases = (
+				E9C3DF2C27A892BF00ADE1D0 /* Sources */,
+				E9C3DF2D27A892BF00ADE1D0 /* Frameworks */,
+				E9C3DF2E27A892BF00ADE1D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ManyTimers Documents (iOS)";
+			packageProductDependencies = (
+				E9947BC327A8B34A00A8FF43 /* LonelyTimer */,
+			);
+			productName = "ManyTimers Documents";
+			productReference = E9C3DF3027A892BF00ADE1D0 /* ManyTimers Documents (iOS).app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9C3DEEA27A891D300ADE1D0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					E9C3DEF127A891D300ADE1D0 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					E9C3DF0627A8920400ADE1D0 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					E9C3DF1927A8929600ADE1D0 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					E9C3DF2F27A892BF00ADE1D0 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = E9C3DEED27A891D300ADE1D0 /* Build configuration list for PBXProject "ManyTimers" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E9C3DEE927A891D300ADE1D0;
+			productRefGroup = E9C3DEF327A891D300ADE1D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9C3DEF127A891D300ADE1D0 /* ManyTimers (iOS) */,
+				E9C3DF0627A8920400ADE1D0 /* ManyTimers (macOS) */,
+				E9C3DF2F27A892BF00ADE1D0 /* ManyTimers Documents (iOS) */,
+				E9C3DF1927A8929600ADE1D0 /* ManyTimers Documents (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9C3DEF027A891D300ADE1D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E91AF43327A8E24D00E4A4C4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9C3DF0527A8920400ADE1D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9C3DF1127A8920500ADE1D0 /* Preview Assets.xcassets in Resources */,
+				E9C3DF0E27A8920500ADE1D0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9C3DF1827A8929600ADE1D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9C3DF2627A8929800ADE1D0 /* Preview Assets.xcassets in Resources */,
+				E9C3DF2327A8929800ADE1D0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9C3DF2E27A892BF00ADE1D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9C3DEEE27A891D300ADE1D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E91AF42F27A8E20200E4A4C4 /* TimersView.swift in Sources */,
+				E91AF42E27A8E1FC00E4A4C4 /* ManyTimersApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9C3DF0327A8920400ADE1D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9C3DF0C27A8920400ADE1D0 /* TimersView.swift in Sources */,
+				E9C3DF0A27A8920400ADE1D0 /* ManyTimersApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9C3DF1627A8929600ADE1D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9C3DF1F27A8929600ADE1D0 /* ManyTimersDocument.swift in Sources */,
+				E9C3DF1D27A8929600ADE1D0 /* ManyTimers_DocumentsApp.swift in Sources */,
+				E91AF43627A8E75900E4A4C4 /* DocumentFeature.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9C3DF2C27A892BF00ADE1D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E91AF43127A8E24500E4A4C4 /* ManyTimersDocument.swift in Sources */,
+				E91AF43027A8E24500E4A4C4 /* ManyTimers_DocumentsApp.swift in Sources */,
+				E91AF43527A8E75900E4A4C4 /* DocumentFeature.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E9C3DEFE27A891D400ADE1D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E9C3DEFF27A891D400ADE1D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E9C3DF0127A891D400ADE1D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ManyTimers/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ManyTimers--iOS--Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "effect-identifier.ManyTimers";
+				PRODUCT_NAME = ManyTimers;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E9C3DF0227A891D400ADE1D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ManyTimers/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ManyTimers--iOS--Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "effect-identifier.ManyTimers";
+				PRODUCT_NAME = ManyTimers;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E9C3DF1427A8920500ADE1D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ManyTimers/ManyTimers.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ManyTimers/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "effect-identifier.ManyTimers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E9C3DF1527A8920500ADE1D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ManyTimers/ManyTimers.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ManyTimers/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "effect-identifier.ManyTimers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E9C3DF2927A8929800ADE1D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "ManyTimers Documents/ManyTimers_Documents.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ManyTimers Documents/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ManyTimers Documents/Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "effect-identifier.ManyTimers-Documents";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E9C3DF2A27A8929800ADE1D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "ManyTimers Documents/ManyTimers_Documents.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ManyTimers Documents/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ManyTimers Documents/Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "effect-identifier.ManyTimers-Documents";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E9C3DF3F27A892C100ADE1D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ManyTimers Documents/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ManyTimers Documents/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "effect-identifier.ManyTimers-Documents";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E9C3DF4027A892C100ADE1D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ManyTimers Documents/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ManyTimers Documents/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "effect-identifier.ManyTimers-Documents";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9C3DEED27A891D300ADE1D0 /* Build configuration list for PBXProject "ManyTimers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9C3DEFE27A891D400ADE1D0 /* Debug */,
+				E9C3DEFF27A891D400ADE1D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9C3DF0027A891D400ADE1D0 /* Build configuration list for PBXNativeTarget "ManyTimers (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9C3DF0127A891D400ADE1D0 /* Debug */,
+				E9C3DF0227A891D400ADE1D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9C3DF1327A8920500ADE1D0 /* Build configuration list for PBXNativeTarget "ManyTimers (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9C3DF1427A8920500ADE1D0 /* Debug */,
+				E9C3DF1527A8920500ADE1D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9C3DF2B27A8929800ADE1D0 /* Build configuration list for PBXNativeTarget "ManyTimers Documents (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9C3DF2927A8929800ADE1D0 /* Debug */,
+				E9C3DF2A27A8929800ADE1D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9C3DF3E27A892C100ADE1D0 /* Build configuration list for PBXNativeTarget "ManyTimers Documents (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9C3DF3F27A892C100ADE1D0 /* Debug */,
+				E9C3DF4027A892C100ADE1D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E9947BBF27A8B33B00A8FF43 /* LonelyTimer */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LonelyTimer;
+		};
+		E9947BC127A8B34300A8FF43 /* LonelyTimer */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LonelyTimer;
+		};
+		E9947BC327A8B34A00A8FF43 /* LonelyTimer */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LonelyTimer;
+		};
+		E9947BC527A8B35200A8FF43 /* LonelyTimer */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LonelyTimer;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E9C3DEEA27A891D300ADE1D0 /* Project object */;
+}

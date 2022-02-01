@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>composable.effect.identifier-many.timers.timer</string>
+			</array>
+			<key>NSUbiquitousDocumentUserActivityType</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER).example-document</string>
+		</dict>
+	</array>
+	<key>UTExportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.json</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>Many Timers timer</string>
+			<key>UTTypeIdentifier</key>
+			<string>composable.effect.identifier-many.timers.timer</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>timer</string>
+				</array>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
