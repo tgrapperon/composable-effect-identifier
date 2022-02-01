@@ -109,7 +109,7 @@ to your Package dependencies in `Package.swift`, and then
 to your target's dependencies.
 
 ## Credits and thanks
-The author ([@tgrapperon]((https://github.com/tgrapperon))) would like to especially thank [@iampatbrown](https://github.com/iampatbrown) who gave the initial feedback that allowed to shape this library, and of course [@mbrandonw](https://github.com/mbrandonw) and [@stephencelis](https://github.com/stephencelis) for the incredible work they put though TCA and their other amazing open-source projects.
+The author ([@tgrapperon](https://github.com/tgrapperon)) would like to especially thank [@iampatbrown](https://github.com/iampatbrown) who gave the initial feedback that allowed to shape this library, and of course [@mbrandonw](https://github.com/mbrandonw) and [@stephencelis](https://github.com/stephencelis) for the incredible work they put though TCA and their other amazing open-source projects.
 
 ## License
 
