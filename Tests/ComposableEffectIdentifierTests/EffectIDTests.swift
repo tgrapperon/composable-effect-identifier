@@ -1,6 +1,6 @@
 import XCTest
 
-@testable import EffectIdentifier
+@testable import ComposableEffectIdentifier
 
 final class EffectIDTests: XCTestCase {
   @EffectID var id1

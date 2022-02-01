@@ -1,5 +1,5 @@
 import ComposableArchitecture
-import EffectIdentifier
+import ComposableEffectIdentifier
 import XCTest
 
 final class ReducerNamespaceTests: XCTestCase {
