@@ -1,7 +1,7 @@
+import ComposableArchitecture
 import LonelyTimer
 import SwiftUI
 import UniformTypeIdentifiers
-import ComposableArchitecture
 
 extension UTType {
   static var timer: UTType {
