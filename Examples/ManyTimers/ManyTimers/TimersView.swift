@@ -36,14 +36,14 @@ struct TimersView: View {
 
   var body: some View {
     #if os(macOS)
-    contentView
-    #else
-    NavigationView {
       contentView
-    }
+    #else
+      NavigationView {
+        contentView
+      }
     #endif
   }
-  
+
   var contentView: some View {
     ScrollView {
       VStack {

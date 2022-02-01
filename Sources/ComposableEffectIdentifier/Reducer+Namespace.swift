@@ -1,5 +1,6 @@
 import ComposableArchitecture
 import SwiftUI
+
 #if DEBUG
   import os
 #endif
@@ -208,7 +209,7 @@ extension Reducer {
         .map { toLocalAction.embed((id, $0)) }
     }
   }
-  
+
   /// A version of ``pullback(state:action:environment:)`` that transforms a reducer that works on
   /// an element into one namespaced reducer that works on a dictionary of element values.
   ///
@@ -274,18 +275,15 @@ extension Reducer {
         #endif
         return .none
       }
-      return self
+      return
+        self
         .namespace(key)
         .run(
-        &globalState[keyPath: toLocalState][key]!,
-        localAction,
-        toLocalEnvironment(globalEnvironment)
-      )
-      .map { toLocalAction.embed((key, $0)) }
+          &globalState[keyPath: toLocalState][key]!,
+          localAction,
+          toLocalEnvironment(globalEnvironment)
+        )
+        .map { toLocalAction.embed((key, $0)) }
     }
   }
 }
-
-
-
-
