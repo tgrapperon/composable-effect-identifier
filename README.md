@@ -2,7 +2,6 @@
 [![Swift](https://github.com/tgrapperon/composable-effect-identifier/actions/workflows/swift.yml/badge.svg?branch=main)](https://github.com/tgrapperon/composable-effect-identifier/actions/workflows/swift.yml)
 [![Documentation](https://github.com/tgrapperon/composable-effect-identifier/actions/workflows/documentation.yml/badge.svg)](https://github.com/tgrapperon/composable-effect-identifier/actions/workflows/documentation.yml)
 [![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Ftgrapperon%2Fcomposable-effect-identifier%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/tgrapperon/composable-effect-identifier)
-[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Ftgrapperon%2Fcomposable-effect-identifier%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/tgrapperon/composable-effect-identifier)
 
 This `ComposableEffectIdentifier` is a small accessory library to [The Composable Architecture](https://github.com/pointfreeco/swift-composable-architecture) (TCA). It allows to improve user experience when defining `Effect` identifiers.
 
