@@ -8,7 +8,7 @@ This `ComposableEffectIdentifier` is a small accessory library to [The Composabl
 It provides two tools to this end: a `@EffectID` property wrapper, and a `namespace()` higher order reducer that allows several similar stores instances to run in the same process without having to micro-manage ongoing `Effect` identifiers.
 
 ### The `@EffectID` property wrapper.
-When using TCA with long-lived effects, we need to provide some hashable value to identify them accross runs of the same reducer. If we start a `timer` effect, we need to provide an identifier for the effect in order to retrieve the effect and cancel it when we don't need it anymore.
+When using TCA with long-lived effects, we need to provide some hashable value to identify them across runs of the same reducer. If we start a `timer` effect, we need to provide an identifier for the effect in order to retrieve the effect and cancel it when we don't need it anymore.
 
 Any `Hashable` value can be used as effect identifier. The authors of TCA are recommending to exploit Swift type system by defining ad hoc local and property-less `Hashable` structs. Any value of this struct is equal to itself, and collisions risks are limited, as these types are defined locally.
 
@@ -16,7 +16,7 @@ For example, inside some `Reducer`'s block, one can define:
 ```swift
 struct TimerID: Hashable {}
 ```
-We can then use any value of this type as an effect idenfier:
+We can then use any value of this type as an effect identifier:
 ```swift
 switch action {
   case .start:
@@ -34,7 +34,7 @@ switch action {
 
 This works well. Calling `TimerID()` and creating a whole type when we simply need an `Hashable` value feels a little awkward though.
 
-The `@EffectID` property wrapper allows to define indentifiers with an absolutely clear intent:
+The `@EffectID` property wrapper allows to define identifiers with an absolutely clear intent:
 ```swift
 @EffectID var timerID
 ```
@@ -69,7 +69,7 @@ Please note that `@EffectID` sharing the same user-defined value will not be equ
 The use of user-defined values can be even avoided most of the time when using _namespaces_.
 
 ### Namespaces
-With its current implementation, the core TCA library can be inconvenient to use in certain configurations, especially when developing document-based apps for example. In this kind of apps, each document is represented by a root `Store`. Each document should be unware of the existence of other documents opened at the same time. In such an app, many instances of the same type of root `Store` may run at the same time in the same process. When using local identifiers like `Hashable` structs in reducers to identify effects, one may create collisions, where one store instance may cancel an effect originating from another store (because ongoing effects are internally stored in a common, top-level, dictionary). 
+With its current implementation, the core TCA library can be inconvenient to use in certain configurations, especially when developing document-based apps for example. In this kind of apps, each document is represented by a root `Store`. Each document should be unaware of the existence of other documents opened at the same time. In such an app, many instances of the same type of root `Store` may run at the same time in the same process. When using local identifiers like `Hashable` structs in reducers to identify effects, one may create collisions, where one store instance may cancel an effect originating from another store (because ongoing effects are internally stored in a common, top-level, dictionary). 
 
 One solution would be to propagate some document-specific identifier in the `State` or the `Environment`, but this would require to append this identifier to **every** effect identifier in order to work properly. Furthermore, "leaking" such an identifier in every unrelated feature impedes feature isolation and reusability (a TCA core principle).
 
