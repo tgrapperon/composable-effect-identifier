@@ -3,7 +3,7 @@ import ComposableEffectIdentifier
 import XCTest
 
 final class ReducerNamespaceTests: XCTestCase {
-  struct State: Equatable {
+  struct State: Equatable, Identifiable {
     var id: Int = 0
     var count: Int = 0
   }
@@ -172,5 +172,157 @@ final class ReducerNamespaceTests: XCTestCase {
     }
 
     store1.send(.stop)
+  }
+
+  func testForEachNamespacedIdentifiedArray() {
+    let scheduler = DispatchQueue.test
+
+    struct ParentState: Equatable {
+      var timers: IdentifiedArrayOf<State>
+    }
+    enum ParentAction: Equatable {
+      case timers(Int, Action)
+    }
+
+    let parentReducer = Reducer<ParentState, ParentAction, Environment>.combine(
+      reducer.forEachNamespaced(
+        state: \ParentState.timers,
+        action: /ParentAction.timers,
+        environment: { $0 }
+      )
+    )
+
+    let store = TestStore(
+      initialState: .init(
+        timers: [
+          .init(id: 0, count: 1),
+          .init(id: 1, count: 2),
+        ]
+      ),
+      reducer: parentReducer,
+      environment: .init(
+        main: scheduler.eraseToAnyScheduler(),
+        documentID: { fatalError() }
+      )
+    )
+
+    store.send(.timers(1, .start))
+    scheduler.advance(by: 1)
+    store.receive(.timers(1, .tick)) {
+      $0.timers[id: 1]?.count = 3
+    }
+
+    // This should be effect-less (!):
+    store.send(.timers(0, .stop))
+
+    // timers[id:1] should still be ticking:
+    scheduler.advance(by: 1)
+    store.receive(.timers(1, .tick)) {
+      $0.timers[id: 1]?.count = 4
+    }
+
+    store.send(.timers(1, .stop))
+  }
+
+  func testForEachNamespacedIdentifiedArrayOfIdentified() {
+    let scheduler = DispatchQueue.test
+
+    struct ParentState: Equatable {
+      var timers: IdentifiedArrayOf<Identified<Int, State>>
+    }
+    enum ParentAction: Equatable {
+      case timers(Int, Action)
+    }
+
+    let parentReducer = Reducer<ParentState, ParentAction, Environment>.combine(
+      reducer.forEachNamespaced(
+        state: \ParentState.timers,
+        action: /ParentAction.timers,
+        environment: { $0 }
+      )
+    )
+
+    let store = TestStore(
+      initialState: .init(
+        timers: [
+          // We reuse reducer and State, but we don't need `State.id`, so we assign -1 for both
+          .init(.init(id: -1, count: 1), id: 0),
+          .init(.init(id: -1, count: 2), id: 1),
+        ]
+      ),
+      reducer: parentReducer,
+      environment: .init(
+        main: scheduler.eraseToAnyScheduler(),
+        documentID: { fatalError() }
+      )
+    )
+
+    store.send(.timers(1, .start))
+    scheduler.advance(by: 1)
+    store.receive(.timers(1, .tick)) {
+      $0.timers[id: 1]?.count = 3
+    }
+
+    // This should be effect-less (!):
+    store.send(.timers(0, .stop))
+
+    // timers[id:1] should still be ticking:
+    scheduler.advance(by: 1)
+    store.receive(.timers(1, .tick)) {
+      $0.timers[id: 1]?.count = 4
+    }
+
+    store.send(.timers(1, .stop))
+  }
+
+  func testForEachNamespacedDictionary() {
+    let scheduler = DispatchQueue.test
+
+    struct ParentState: Equatable {
+      var timers: [Int: State]
+    }
+    enum ParentAction: Equatable {
+      case timers(Int, Action)
+    }
+
+    let parentReducer = Reducer<ParentState, ParentAction, Environment>.combine(
+      reducer.forEachNamespaced(
+        state: \ParentState.timers,
+        action: /ParentAction.timers,
+        environment: { $0 }
+      )
+    )
+
+    let store = TestStore(
+      initialState: .init(
+        timers: [
+          // We reuse reducer and State, but we don't need `State.id`, so we assign -1 for both
+          0: .init(id: -1, count: 1),
+          1: .init(id: -1, count: 2),
+        ]
+      ),
+      reducer: parentReducer,
+      environment: .init(
+        main: scheduler.eraseToAnyScheduler(),
+        documentID: { fatalError() }
+      )
+    )
+
+    store.send(.timers(1, .start))
+    scheduler.advance(by: 1)
+    store.receive(.timers(1, .tick)) {
+      $0.timers[1]?.count = 3
+    }
+
+    // This should be effect-less (!):
+    store.send(.timers(0, .stop))
+
+    // timers[1] should still be ticking:
+    scheduler.advance(by: 1)
+    store.receive(.timers(1, .tick)) {
+      $0.timers[1]?.count = 4
+    }
+
+    store.send(.timers(1, .stop))
   }
 }
