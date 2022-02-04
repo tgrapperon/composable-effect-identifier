@@ -11,6 +11,15 @@
         }
       },
       {
+        "package": "composable-effect-identifier",
+        "repositoryURL": "https://github.com/tgrapperon/composable-effect-identifier",
+        "state": {
+          "branch": null,
+          "revision": "5272092e67a1dc64ffc4d20d17fc15e084bd22d9",
+          "version": "0.0.1"
+        }
+      },
+      {
         "package": "swift-case-paths",
         "repositoryURL": "https://github.com/pointfreeco/swift-case-paths",
         "state": {
