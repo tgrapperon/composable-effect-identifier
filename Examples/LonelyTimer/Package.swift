@@ -17,7 +17,7 @@ let package = Package(
       targets: ["LonelyTimer"])
   ],
   dependencies: [
-    .package(path: "../../"),
+    .package(name: "composable-effect-identifier", path: "../../"),
     .package(url: "https://github.com/pointfreeco/swift-composable-architecture", from: "0.33.1"),
   ],
   targets: [
