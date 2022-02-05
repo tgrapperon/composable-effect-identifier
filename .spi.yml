@@ -1,0 +1,13 @@
+version: 1
+builder:
+  configs:
+  - platform: ios
+    scheme: ComposableEffectIdentifier
+  - platform: macos-xcodebuild
+    scheme: ComposableEffectIdentifier
+  - platform: macos-xcodebuild-arm
+    scheme: ComposableEffectIdentifier
+  - platform: tvos
+    scheme: ComposableEffectIdentifier
+  - platform: watchos
+    scheme: ComposableEffectIdentifier
