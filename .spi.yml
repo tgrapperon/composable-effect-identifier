@@ -11,3 +11,4 @@ builder:
     scheme: ComposableEffectIdentifier
   - platform: watchos
     scheme: ComposableEffectIdentifier
+  - documentation_targets: [ComposableEffectIdentifier]
